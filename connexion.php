@@ -7,21 +7,21 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
     $pass=$_POST['mdp'];
     $sql=mysqli_query ($bdd,"SELECT * FROM utilisateurs WHERE login='$login' and password='$pass'");
     $res= mysqli_fetch_all($sql); 
-if(count($res) > 0 ) {
-echo "vous êtes connecté";
-session_start();
-header("Refresh: 6;url=index.php");
-
+    if(count($res) > 0 ) {
+        echo "vous êtes connecté";
+        session_start();
+        $_SESSION['id']=$res[0][0];
+        header("Refresh: 6;url=profil.php");
+        if ($login == 'admin' && $pass== 'admin') {
+            $sql=mysqli_query ($bdd,"SELECT * FROM utilisateurs WHERE login='$login' AND password='$pass'");
+            $res= mysqli_fetch_all($sql); 
+            session_start();
+            header ('Location: admin.php');
+        } 
+    }
 }
-if ($login == 'admin' && $pass== 'admin') {
-    $sql=mysqli_query ($bdd,"SELECT * FROM utilisateurs WHERE login='$login' AND password='$pass'");
- $res= mysqli_fetch_all($sql); 
-   session_start();
-   header ('Location: admin.php');}
-}
 
-
-    ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">
