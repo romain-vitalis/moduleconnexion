@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="moduleconnexion.css">
+    <link rel="stylesheet" href="moduleconnexions.css">
     <title>Mon site</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
     <li><a href="profil.php">Profil</a></li>
 </ul>
 </nav> 
-    <header> 
+    <header class="img"> 
         <img src="https://www.leparisien.fr/resizer/e9VQt5CzgXxTsxJ4vV6jADkRuqk=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/GQKKHDS7U5BAHNKBS37LFQHH6A.jpg" width="1500px"  height="400px">
     </header>
 <main>

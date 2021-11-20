@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(100deg,#e66465, #9198e5);
+  }
+  
+.formulaire{
+      display: flex;
+      justify-content: center;
+  }
+
+.connexion{
+    background: linear-gradient(100deg,#94b2b481, #1c58c7);  
+    display: flex;
+    justify-content: center;
+}
+.modification{
+    background: linear-gradient(100deg,#43b13481, #1a99aa);  
+ 
+}
+.Menu{
+    display: flex;
+    justify-content: space-between;
+}
+.formli{
+    background: linear-gradient(100deg,#43b13481, #1a99aa);  
+    display: flex;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
