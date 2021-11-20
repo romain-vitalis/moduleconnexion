@@ -12,20 +12,15 @@
         <div>
         <img src="https://www.makrea.com/1441-large_default/sticker-logo-olympique-de-marseille.jpg" alt="Logo OM" width="145px" height="145px"></a>
         </div>
-        <ul class="Menu">
+<ul class="Menu">
     <li>Accueil</li>
-
     <li>Boutique</li>
-
     <li>Billeterie</li>
-
     <li><a href="inscription.php">Inscription</a></li>
-
     <li><a href="connexion.php">Connexion</a></li>
-    
     <li><a href="profil.php">Profil</a></li>
 </ul>
-    </nav> 
+</nav> 
     <header> 
         <img src="https://www.leparisien.fr/resizer/e9VQt5CzgXxTsxJ4vV6jADkRuqk=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/GQKKHDS7U5BAHNKBS37LFQHH6A.jpg" width="1500px"  height="400px">
     </header>
