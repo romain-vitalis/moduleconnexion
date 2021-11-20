@@ -48,7 +48,7 @@
             L’OM n’a d’ailleurs pas encaissé de but lors de 3 de ses 4 dernières rencontres dans l’élite. <br>
             Dimitri Payet est impliqué sur 13 buts face à l'OL en Ligue 1 Uber Eats (4 buts, 9 passes décisives), son meilleur total face à une équipe actuelle de l’élite.<br>
 </main>
-        <section class="fan">
+        <section class="fans">
             <a>Rejoins le fan club de l'OM en cliquant sur l'onglet Inscription</a> 
                 <br>
             <a>Sinon connectez-vous sur l'onglet Connexion</a> 
