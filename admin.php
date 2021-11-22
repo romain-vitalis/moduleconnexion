@@ -8,7 +8,7 @@
     <body>
         <h1>My SQL</h1>
         <?php
-            $bdd = mysqli_connect("localhost","root","","moduleconnexion"); 
+            $bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
             $req= mysqli_query($bdd,"SELECT * FROM utilisateurs");  
             $res= mysqli_fetch_all($req); 
  ?>
