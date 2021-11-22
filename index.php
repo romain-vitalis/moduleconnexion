@@ -66,5 +66,17 @@
             <a>Rejoins le fan club de l'OM en cliquant sur l'onglet Inscription</a><br>
             <a>Sinon connectez-vous sur l'onglet Connexion</a> 
         </section>
+        <footer>      
+    <h3>Contact</h3>
+    <p>Tel:04 84 45 38 00</p>
+    <p>Emails: digital@om.net</p>
+    <p>Adresse: 3 Bd Michelet,</p>
+    <p>Ville: Marseille 13008</p>
+    <p>Ou alors contactez-nous via nos réseaux sociaux</p>
+    <li><a href="https://twitter.com/OM_Officiel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+    <li><a href="https://www.facebook.com/OM">Facebook</a></li>   
+</footer>
+</body>
+</html>
 </body>
 </html>
