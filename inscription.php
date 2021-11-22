@@ -8,7 +8,7 @@ if (isset($_POST['env']))
   $mdp = $_POST['mdp'];
   $utilisateurs = $_POST['login'];
   $req= mysqli_query($bdd,"INSERT INTO utilisateurs (login,prenom,nom,password)
-  VALUES('$nom','$prenom','$utilisateurs','$mdp')");
+  VALUES('$utilisateurs','$prenom','$nom','$mdp')");
   echo 'enregistrement réussi';
   header("Refresh: 6;url=connexion.php");
   }
