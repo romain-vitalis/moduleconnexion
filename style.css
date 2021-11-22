@@ -1,7 +1,7 @@
 body {
     background: linear-gradient(100deg,#e66465, #9198e5);
   }
-  
+
 .formulaire{
       display: flex;
       justify-content: center;
@@ -32,3 +32,38 @@ h3{
     display: flex;
     justify-content: center;
 }
+
+.photos1{
+    display: flex;
+    justify-content: space-around;
+     
+     }
+
+blockquote {
+      padding: 3%;
+      background:rgba(0, 0, 0, 0.705);
+      border: 0ch;
+      animation-duration: 6s;
+      animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  h5{
+    font-size: large;
+    text-align: center;
+  }
+  a{
+    font-size: large;
+    text-align: center;
+  }
