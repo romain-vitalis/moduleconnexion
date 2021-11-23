@@ -29,9 +29,22 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Connexion</title>
+    <link rel="stylesheet" href="moduleconnexions.css">
+    <title>$connexion</title>
 </head>
+<nav>
+        <div>
+        <img src="https://www.makrea.com/1441-large_default/sticker-logo-olympique-de-marseille.jpg" alt="Logo OM" width="145px" height="145px">
+        </div>
+<ul class="Menu">
+    <li><a href="index.php">Accueil</a></li>
+    <li>Boutique</li>
+    <li>Billeterie</li>
+    <li>Inscription</li>
+    <li><a href="connexion.php">Connexion</a></li>
+    <li><a href="profil.php">Profil</a></li>
+</ul>
+</nav> 
 <body>
 <div class ="connexion">
 <form method="POST" action="#">
@@ -40,6 +53,16 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
         <input type=submit value="Envoyer" name="env">
 </div>
 </form>
+<footer>      
+    <h3>Contact</h3>
+    <p>Tel:04 84 45 38 00</p>
+    <p>Emails: digital@om.net</p>
+    <p>Adresse: 3 Bd Michelet,</p>
+    <p>Ville: Marseille 13008</p>
+    <p>Ou alors contactez-nous via nos réseaux sociaux</p>
+    <li><a href="https://twitter.com/OM_Officiel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+    <li><a href="https://www.facebook.com/OM">Facebook</a></li>   
+</footer>
 </body>
 </html>
  
