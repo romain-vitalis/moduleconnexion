@@ -70,7 +70,7 @@ if (isset($_POST['env']))
         <footer>      
     <h3>Contact</h3>
     <p>Tel:04 84 45 38 00</p>
-    <p>Emails: digital@om.net</p>
+    <p>Email: digital@om.net</p>
     <p>Adresse: 3 Bd Michelet,</p>
     <p>Ville: Marseille 13008</p>
     <p>Ou alors contactez-nous via nos réseaux sociaux</p>

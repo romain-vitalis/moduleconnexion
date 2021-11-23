@@ -1,4 +1,5 @@
 <?php
+ /* fonction pour ouvrir une connexion au serveur MySQL */
 $bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 
 
@@ -32,10 +33,13 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
     <link rel="stylesheet" href="style.css">
     <title>$connexion</title>
 </head>
+  <!--Début Barre de Naviguation --->
 <nav>
         <div>
         <img src="https://www.makrea.com/1441-large_default/sticker-logo-olympique-de-marseille.jpg" alt="Logo OM" width="145px" height="145px">
         </div>
+
+<!--Début Menu --->
 <ul class="Menu">
     <li><a href="index.php">Accueil</a></li>
     <li>Boutique</li>
@@ -45,6 +49,7 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
     <li><a href="profil.php">Profil</a></li>
 </ul>
 </nav> 
+
 <body>
 <div class ="connexion">
 <form method="POST" action="#">
@@ -53,10 +58,11 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
         <input type=submit value="Envoyer" name="env">
 </div>
 </form>
+
 <footer>      
     <h3>Contact</h3>
     <p>Tel:04 84 45 38 00</p>
-    <p>Emails: digital@om.net</p>
+    <p>Email: digital@om.net</p>
     <p>Adresse: 3 Bd Michelet,</p>
     <p>Ville: Marseille 13008</p>
     <p>Ou alors contactez-nous via nos réseaux sociaux</p>

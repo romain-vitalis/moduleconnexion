@@ -27,9 +27,7 @@
                 <tr>
             <?php
 
-
-
-                foreach($res as $key => $value){ 
+              foreach($res as $key => $value){ 
                 echo '<tr>';
                 foreach ($value as $key1 => $value1) 
                 {

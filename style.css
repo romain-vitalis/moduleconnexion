@@ -1,7 +1,8 @@
 body {
     background: linear-gradient(100deg,#e66465, #9198e5);
   }
-
+  
+/*alignement formulaire */
 .formulaire{
       display: flex;
       justify-content: center;
@@ -20,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .formli{
     background: linear-gradient(100deg,#43b13481, #1a99aa);  
     display: flex;
@@ -33,12 +35,13 @@ h3{
     justify-content: center;
 }
 
+/*alignement des photos*/
 .photos1{
     display: flex;
     justify-content: space-around;
      
      }
-
+/*blocs*/
 blockquote {
       padding: 3%;
       background:rgba(0, 0, 0, 0.705);
@@ -47,6 +50,7 @@ blockquote {
       animation-name: slidein;
   }
 
+/*animation*/
   @keyframes slidein {
     from {
       margin-left: 100%;
