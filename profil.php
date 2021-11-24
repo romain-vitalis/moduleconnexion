@@ -51,7 +51,7 @@ if (isset($_POST['env']))
 </header>
 <body>
 <h3>Modification du profil</h3>
-        
+<!--Début formulaire --->
         <form name="formu" action="" method="post">
         <label for ="login">Login</label>
         <input id="login" name="login" value="<?php echo $login?>" type="text" placeholder="username"/>
@@ -62,8 +62,7 @@ if (isset($_POST['env']))
         <label for ="password">Password</label>
         <input name="password" value="<?php echo $password?>" type="password" placeholder="Ton mdp"/>
         <input name="env" type="submit" placeholder="mettre à jour mon profil">
-    </form>
-        </div>
+        </form>
         <section class="fans">
             <a>Rejoins le fan club de l'OM en cliquant sur l'onglet Inscription</a><br>
             <a>Sinon connectez-vous sur l'onglet Connexion</a> 
