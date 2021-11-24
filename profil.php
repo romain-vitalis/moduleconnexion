@@ -51,17 +51,18 @@ if (isset($_POST['env']))
 </header>
 <body>
 <h3>Modification du profil</h3>
-        <form name="formu" action="#" method="POST">
-        <div class ="formli">
-        <label for="username">Nouveau login:</label> 
-        <input id="login" name="login" type="text" placeholder="username"/>
-        <label for="username">Changement Prénom:</label> 
-        <input name="prenom"  type="text" placeholder="prenom"/>
-        <label for="username">Changement nom:</label> 
-        <input name="nom"  type="text" placeholder="nom"/>
-        <label for="username">Changement mot de passe :</label> 
-        <input name="password"  type="password" placeholder="ton mdp"/>
-	    <input type=submit value="Mettre à jour le profil" name="env">
+        
+        <form name="formu" action="" method="post">
+        <label for ="login">Login</label>
+        <input id="login" name="login" value="<?php echo $login?>" type="text" placeholder="username"/>
+        <label for ="prenom">prenom</label>
+        <input name="prenom" value="<?php echo $prenom?>" type="text" placeholder="prenom" />
+        <label for ="nom">nom</label>
+        <input name="nom" value="<?php echo $nom?>" type="text" placeholder="nom" />
+        <label for ="password">Password</label>
+        <input name="password" value="<?php echo $password?>" type="password" placeholder="Ton mdp"/>
+        <input name="env" type="submit" placeholder="mettre à jour mon profil">
+    </form>
         </div>
         <section class="fans">
             <a>Rejoins le fan club de l'OM en cliquant sur l'onglet Inscription</a><br>
