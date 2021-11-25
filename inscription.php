@@ -15,7 +15,7 @@ if (isset($_POST['env']))
       echo '...Bienvenue dans le fan club de LOM';
       $req= mysqli_query($connect,"INSERT INTO utilisateurs (login,prenom,nom,password)
     VALUES('$login','$prenom','$nom','$password')");
-    } else {echo 'T as dja oublié ton mdp... tu l as marqué ya 6sec... abuse pas';}
+    } else {echo 'Tu as oublier de mettre le même mot de passe';}
 
   } else {echo 'Tu as oublier de remplir un champ';}
   
