@@ -1,5 +1,5 @@
 <?php
-$connect= mysqli_connect("localhost","root","","moduleconnexion");
+$bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 
 
 if (isset($_POST['env']))
@@ -12,12 +12,12 @@ if (isset($_POST['env']))
 
   if (!empty($nom) && !empty($prenom) && !empty($password) && !empty($login)) {
     if ($password == $conf) { 
-      echo '...T es juste trop fort mon reuf BVN A TOI';
+      echo '...Bienvenue dans le fan club de lOM';
       $req= mysqli_query($connect,"INSERT INTO utilisateurs (login,prenom,nom,password)
     VALUES('$login','$prenom','$nom','$password')");
-    } else {echo 'T as dja oublié ton mdp... tu l as marqué ya 6sec... abuse pas';}
+    } else {echo 'Tas oublier de mettre le même mot de passe';}
 
-  } else {echo 'Tu dois tout remplir mon reuf... t es vraiment CENSURED';}
+  } else {echo 'T as oublier de remplir un champ';}
   
 } 
 
