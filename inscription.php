@@ -1,5 +1,5 @@
 <?php
-$bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
+$connect= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 
 
 if (isset($_POST['env']))
