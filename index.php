@@ -29,7 +29,7 @@ session_start();
         echo "<li><a href='profil.php'>Profil</a></li>"; 
          } else {
         echo "<li><a href='connexion.php'>Se connecter</a></li>";
-        echo "<li><a href='Inscription.php'>Sinscrire</a></li>";
+        echo "<li><a href='inscription.php'>Sinscrire</a></li>";
     };
         ?>
       </ul>
