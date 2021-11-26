@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +22,18 @@
     <li>Accueil</li>
     <li>Boutique</li>
     <li>Billeterie</li>
-    <li><a href="inscription.php">Inscription</a></li>
-    <li><a href="connexion.php">Connexion</a></li>
-    <li><a href="profil.php">Profil</a></li>
-</ul>
+    <ul class="sous">
+        <?php 
+        if (isset($_SESSION["id"])) {
+        echo "<li><a href='deconnexion.php'>deconnexion</a></li>";
+        echo "<li><a href='profil.php'>Profil</a></li>"; 
+         } else {
+        echo "<li><a href='connexion.php'>Se connecter</a></li>";
+        echo "<li><a href='Inscription.php'>Sinscrire</a></li>";
+    };
+        ?>
+      </ul>
+
 </nav> 
     <header class="img"> 
         <img src="https://www.leparisien.fr/resizer/e9VQt5CzgXxTsxJ4vV6jADkRuqk=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/GQKKHDS7U5BAHNKBS37LFQHH6A.jpg" width="1500px"  height="400px">

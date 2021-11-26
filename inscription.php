@@ -1,7 +1,6 @@
 <?php
 $connect= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 
-
 if (isset($_POST['env']))
 {
   $nom = $_POST['nom'];
@@ -42,9 +41,15 @@ if (isset($_POST['env']))
     <li><a href="index.php">Accueil</a></li>
     <li>Boutique</li>
     <li>Billeterie</li>
-    <li>Inscription</li>
-    <li><a href="connexion.php">Connexion</a></li>
-    <li><a href="profil.php">Profil</a></li>
+    <?php 
+        if (isset($_SESSION["id"])) {
+        echo "<li><a href='crash.php'>Déconnexion</a></li>";
+        echo "<li><a href='profil.php'>Profil</a></li>"; 
+         } else {
+        echo "<li><a href='connexion.php'>Se connecter</a></li>";
+        echo "<li><a href='Inscription.php'>Sinscrire</a></li>";
+    };
+        ?>
 </ul>
 </nav> 
       <div class="formulaire"> 

@@ -41,9 +41,15 @@ if (isset($_POST['env']))
     <li><a href="index.php">Accueil</a></li>
     <li>Boutique</li>
     <li>Billeterie</li>
-    <li><a href="inscription.php">Inscription</a></li>
-    <li><a href="connexion.php">Connexion</a></li>
-    <li>Profil</li>
+    <?php 
+        if (isset($_SESSION["id"])) {
+        echo "<li><a href='crash.php'>Déconnexion</a></li>";
+        echo "<li><a href='profil.php'>Profil</a></li>"; 
+         } else {
+        echo "<li><a href='connexion.php'>Se connecter</a></li>";
+        echo "<li><a href='Inscription.php'>Sinscrire</a></li>";
+    };
+        ?>
 </ul>
 </nav> 
 <header class ="img"> 
