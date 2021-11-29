@@ -1,4 +1,5 @@
 <?php
+
  /* fonction pour ouvrir une connexion au serveur MySQL */
 $bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 
@@ -12,13 +13,18 @@ if(isset($_POST['login']) && isset($_POST['mdp'])){
         echo "vous êtes connecté";
         session_start();
         $_SESSION['id']=$res[0][0];
-        header("Refresh: 6;url=profil.php");
+        $_SESSION['on']=1;
         if ($login == 'admin' && $pass== 'admin') {
             $sql=mysqli_query ($bdd,"SELECT * FROM utilisateurs WHERE login='$login' AND password='$pass'");
             $res= mysqli_fetch_all($sql); 
             session_start();
+            $_SESSION['admin']=1;
             header ('Location: admin.php');
         } 
+        else{
+        header("Refresh: 6;url=profil.php");
+    }
+
     }
 }
 

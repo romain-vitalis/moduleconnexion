@@ -1,6 +1,9 @@
 <?php
 
 session_start();
+if(isset($_SESSION['on'])){
+    
+
 $id = $_SESSION["id"];
 $bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
 $req= mysqli_query($bdd,"SELECT * FROM utilisateurs WHERE id = $id");
@@ -17,10 +20,11 @@ if (isset($_POST['env']))
     $prenom10 = $_POST['prenom'];
     $password10 = $_POST['password'];
     $login10 = $_POST['login'];
-    $req2= mysqli_query($bdd,"UPDATE utilisateurs SET login='$login10', prenom='$prenom10', nom='$nom10', password='$password10' WHERE  id = $id ");
-    header("Location: profil.php");
+    if($login10 !='admin'){
+        $req2= mysqli_query($bdd,"UPDATE utilisateurs SET login='$login10', prenom='$prenom10', nom='$nom10', password='$password10' WHERE  id = $id ");
+        header("Location: profil.php");
+    }
 } 
-
 ?>
 
 
@@ -83,7 +87,10 @@ if (isset($_POST['env']))
     <li><a href="https://twitter.com/OM_Officiel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
     <li><a href="https://www.facebook.com/OM">Facebook</a></li>   
     </footer>
-        </form>
+    <?php
+}
+else{ echo 'vous netes pas connecté';}
+?>
 </body>
 </html>
 

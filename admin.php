@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,8 +9,14 @@
 
     </head>
     <body>
+        
+        <?php
+        session_start();
+    if(isset($_SESSION['admin'])){
+        ?>
         <h1>My SQL</h1>
         <?php
+        var_dump ($_SESSION);
             $bdd= mysqli_connect("localhost:3306","romain-vitalis","Lacoste260???","romain-vitalis_moduleconnexion");
             $req= mysqli_query($bdd,"SELECT * FROM utilisateurs");  
             $res= mysqli_fetch_all($req); 
@@ -39,5 +48,10 @@
 
             </body>
         </table>
+        <?php
+            }
+        
+            else echo 'accés non autorisé'
+            ?>
     </body>
 </html>
